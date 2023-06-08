@@ -1,0 +1,43 @@
+{{ define "main" }}
+
+<div class="wrapper">
+
+    {{ block "title" . }}
+    <h1 class="page-title">{{ .Title }}</h1>
+    {{ end }}
+
+    {{ block "details" . }}
+    <div class="page-details-inline">
+        <div class="page-date">
+            Pub. {{ .Date.Format "2006, Jan 02" }}
+        </div>
+        {{ if
+            (and
+                (isset .Params "updated")
+                (gt
+                    (time.AsTime (.Params.updated))
+                    (.Date)))}}
+            <div class="page-date">
+                Mod. {{ (time.AsTime (.Params.updated)).Format "2006, Jan 02" }}
+            </div>
+        {{ end }}
+        {{ if isset .Params "tags" }}
+            <div class="page-tags">
+                {{ range .Params.tags }}
+                    <code class="page-tag">{{ . }}</code>
+                {{ end }}
+            </div>
+        {{ end }}
+    </div>
+    {{ end }}
+
+    {{ block "content" . }}
+    <main>
+        {{ .Content }}
+
+        {{ block "list" . }}{{ end }}
+    </main>
+    {{ end }}
+</div>
+
+{{ end }}

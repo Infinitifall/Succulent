@@ -1,0 +1,4 @@
+# hugo stuff
+.hugo_build.lock
+public/
+resources/

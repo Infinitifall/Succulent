@@ -1,0 +1,11 @@
+<figure>
+    <img
+        loading="lazy"
+        style="max-width:100%;"
+        src='{{ (.Get "src") | absURL }}'
+        alt='{{ .Get "alt" }}'
+    >
+    {{ if isset .Params "caption"}}
+    <figcaption>{{ .Get "caption" | markdownify  }}</figcaption>
+    {{ end }}
+</figure>

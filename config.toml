@@ -1,0 +1,22 @@
+baseURL = "https://example.com"  # add your website here
+
+[params]
+  siteName = "Example Site Name"
+  version_string = "30"  # change to bypass browser cache
+
+[markup]
+  [markup.highlight]
+    noClasses = false
+
+  [markup.tableOfContents]
+    startLevel = 1
+    endLevel = 3
+    ordered = false
+
+  [markup.goldmark]
+    [markup.goldmark.extensions]
+      [markup.goldmark.extensions.passthrough]
+        enable = true
+        [markup.goldmark.extensions.passthrough.delimiters]
+          block = [['\[', '\]'], ['$$', '$$']]
+          inline = [['\(', '\)']]

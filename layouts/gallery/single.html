@@ -1,0 +1,18 @@
+{{ define "main" }}
+<div class="wrapper-gallery">
+        
+    {{ block "title" . }}
+    <h1 class="page-title">{{ .Title }}</h1>
+    {{ end }}
+
+    {{ block "details" . }}
+    {{ end }}
+
+    {{ block "content" . }}
+    <main>
+        {{ .Content }}
+    </main>
+    {{ end }}
+
+</div>
+{{ end }}

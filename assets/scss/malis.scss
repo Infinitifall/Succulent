@@ -1,0 +1,56 @@
+@charset "utf-8";
+
+$base-font-family:    Helvetica, "Noto Sans", sans-serif;
+$title-font-family:   Helvetica, "Noto Sans", sans-serif;
+$heading-font-family: Helvetica, "Noto Sans", sans-serif;
+$navbar-font-family:  Georgia, "Noto Serif", serif;
+$code-font-family:    Consolas, "Noto Sans Mono", ui-monospace, monospace;
+
+$base-font-size:  16px;
+$small-font-size: 13px;
+$code-font-size:  13.5px;
+$tag-font-size:   11px;
+$latex-font-size: 19px;
+
+$font-weight-base:    400;
+$font-weight-title:   600;
+$font-weight-heading: 600;
+$font-weight-code:    400;
+
+$line-height-base: 1.4;
+$line-height-code: 1.3;
+
+$letter-spacing-base:    0;
+$letter-spacing-title:   -0.03em;
+$letter-spacing-heading: -0.01em;
+
+$text-base:    #404040;
+$text-grey:    #888;
+$text-title:   #444;
+$text-heading: #844;
+$text-code:    #444;
+$text-quote:   #777;
+$text-link:    #4365a3;
+$text-tag:     #888;
+
+$bg-base:      #fff;
+$bg-grey:      #e6e6e6;
+$bg-code:      #eee;
+$bg-quote:     #eee;
+$bg-tag:       #eee;
+$bg-highlight: #fffdef;
+$bg-table:     #f1eef6;
+$bg-sidebar:   #f2f2f2;
+$bg-border:    #ddd;
+
+$width-content: 850px;
+$width-gallery: 900px;
+$width-image:   550px;
+$width-max:     95%;
+
+
+@import
+  "malis/base",
+  "malis/layout",
+  "malis/syntax-highlighting"
+;

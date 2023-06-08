@@ -1,0 +1,14 @@
+{{ define "details" }}
+<div class="page-details-inline">
+</div>
+{{ end }}
+
+{{ define "list" }}
+<ul>
+    {{ range .Pages }}
+    <li>
+        <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+    </li>
+    {{ end }}
+</ul>
+{{ end }}

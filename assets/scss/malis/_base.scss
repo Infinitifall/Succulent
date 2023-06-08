@@ -1,0 +1,126 @@
+body {
+  color: $text-base;
+  background-color: $bg-base;
+  font-family:    $base-font-family;
+  font-size:      $base-font-size;
+  font-weight:    $font-weight-base;
+  line-height:    $line-height-base;
+  letter-spacing: $letter-spacing-base;
+  margin: 0;
+}
+
+a { color: $text-link; text-decoration: none; }
+a:visited { color: $text-link; }
+a:hover { text-decoration: underline; color: darken($color: $text-link, $amount: 15%)}
+
+img {
+  display: block;
+  margin: 3em auto 3em auto;
+  min-height: 4em;  // help with lazy loading
+  max-width: MIN($width-image, $width-max);
+  box-shadow: 0px 0px 20px 1px rgba(0, 0, 0, 0.3);
+}
+
+table {
+  border-collapse: collapse;
+  margin: 1em auto 1em auto;
+  th, td {
+    padding: 0.3em 0.5em;
+    border: 1px solid darken($bg-table, 10%);
+  }
+  tr {
+    background-color: $bg-table;
+  }
+  thead > tr {
+    background-color: darken($bg-table, 3%) !important;
+  }
+}
+
+ol, ul {
+  padding: 0 0 0 2em;
+}
+
+code {
+  color: $text-code;
+  background-color: $bg-code;
+  font-family: $code-font-family;
+  font-size:   $code-font-size;
+  line-height: $line-height-code;
+  font-weight: $font-weight-code;
+  padding: 0.05em 0.2em;
+  border-radius: 0.2em;
+  border: 1px transparent solid;
+}
+
+figure {
+  margin: 0;
+
+  figcaption {
+    margin-top: -2.5em;
+    margin-bottom: 3em;
+    display: block;
+    text-align: center;
+    font-style: italic;
+    color: $text-grey;
+  }
+}
+
+pre {
+  overflow-x: auto;
+  line-height: $line-height-code;
+  border: 1px $bg-border solid;
+  > code {
+    color: $text-code;
+    background-color: transparent;
+    display: block;
+    margin: 0 0;
+    padding: 1em 1em;
+    border: none;
+  }
+}
+
+blockquote {
+  color: $text-quote;
+  background-color: $bg-quote;
+  margin: 2em 0em;
+  padding: 0.5em 1em;
+  border-left: 4px solid darken($bg-quote, 50%);
+  p:first-child { margin-top: 0; }
+  p:last-child { margin-bottom: 0; }
+}
+
+h1, h2, h3,
+h4, h5, h6 {
+  color: $text-heading;
+  font-family: $heading-font-family;
+  font-weight: $font-weight-heading;
+  letter-spacing: $letter-spacing-heading;
+  margin-top: 2.5em;
+  margin-bottom: 0;
+  scroll-margin-top: 3rem;
+  padding-bottom: 0.1em;
+}
+h1, h2 { border-bottom: 1px solid $bg-grey; }
+h1 { font-size: 1.8em; }
+h2 { font-size: 1.3em; }
+h3 { font-size: 1.1em; }
+h4 { font-size: 1em; }
+h5 { font-size: 0.8em; }
+h6 { font-size: 0.5em; }
+
+hr {
+  color: $bg-grey;
+  background-color: $bg-grey;
+  margin: 1em 0 1em 0;
+  height: 1px;
+  border-style: solid;
+}
+
+textarea {
+  color: $text-base;
+  font-size: $code-font-size;
+  background-color: $bg-highlight;
+  padding: 0.1em 0.3em;
+  border-radius: 0.4em;
+  border: none;
+}
