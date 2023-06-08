@@ -32,7 +32,7 @@ git clone https://github.com/Infinitifall/Succulent
 cd Succulent
 
 # serve website locally
-hugo server
+hugo server --buildDrafts
 
 # or build the website
 hugo
