@@ -1,0 +1,406 @@
+.light {
+  body {
+    font-family: $base-font-family;
+    font-size: $base-font-size;
+    line-height: $base-line-height;
+    font-weight: $base-font-weight;
+    letter-spacing: $base-letter-spacing;
+
+    color: $base-text;
+    background-color: $bg-0;
+
+    margin: 0;
+  }
+
+  /*
+  Links
+  */
+  a { color: $link-1; text-decoration: none; }
+  a:visited { color: $link-1; }
+  a:hover { text-decoration: underline; color: darken($color: $link-1, $amount: 5%)}
+
+  /*
+  Images
+  */
+  img {
+    margin-top: 1em + 2em;
+    margin-bottom: 2em;
+
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+
+    max-width: MIN($image-width, $content-max-width);
+  }
+
+  /*
+  Image captions
+  */
+  img + em {
+    margin-top: -1.5em;
+    margin-bottom: 2em;
+
+    display: block;
+    text-align: center;
+
+    color: $grey-text;
+  }
+
+  /*
+  Tables
+  */
+  table, th, td {
+    margin: 2em 1em;
+    padding: 0.3em 0.5em;
+
+    margin-left: auto;
+    margin-right: auto;
+
+    border: 1px solid $grey-text;
+    border-collapse: collapse;
+  }
+
+  tr:nth-child(even) {
+    background-color: $bg-table;
+  }
+
+  tr:nth-child(odd) {
+    background-color: lighten($bg-table, 2.5%);
+  }
+
+  thead > tr {
+    background-color: darken($bg-table, 5%) !important;
+  }
+
+  /*
+  Code and preformatted text
+  */
+  code {
+    color: $code-1;
+    font-family: $code-font-family;
+    font-size: $code-font-size;
+    line-height: $code-line-height;
+    font-weight: $code-font-weight;
+    background-color: $bg-code;
+    padding: 0.05em 0.2em;
+    border-radius: 0.4em;
+    border: 1px darken($bg-code, 10%) solid;
+  }
+
+  figure {
+    margin: 0 0;
+  }
+
+  pre {
+    overflow-x: auto;
+    line-height: $code-line-height;
+    border: 1px $bg-pre-border solid;
+
+    > code {
+      color: $code-1;
+      display: block;
+      margin: 0 0;
+      padding: 1em 1em;
+      border: none;
+      background-color: transparent;
+    }
+  }
+
+  /*
+  Quote
+  */
+  blockquote {
+    margin: 2em 0em;
+    padding: 0.5em 1em;
+    border-left: 4px solid darken($bg-quote, 50%);
+    background-color: $bg-quote;
+
+    p:first-child {
+      margin-top: 0;
+    }
+
+    p:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  /*
+  Headings
+  */
+  h1, h2, h3,
+  h4, h5, h6 {
+    margin-top: 1.5em;
+    margin-bottom: 0;
+    color: $heading-text;
+    font-family: $heading-font-family;
+    font-weight: $heading-font-weight;
+    padding-bottom: 0.1em;
+  }
+
+  h1, h2 { border-bottom: 1px solid $bg-1;}
+
+  h1 { font-size: 2em; }
+  h2 { font-size: 1.6em; }
+  h3 { font-size: 1.2em; }
+  h4 { font-size: 1em; }
+  h5 { font-size: 0.8em; }
+  h6 { font-size: 0.6em; }
+
+  /*
+  Breaks
+  */
+  hr {
+    margin-top: 1em;
+    margin-bottom: 1em;
+    height: 1px;
+    color: $bg-1;
+    background-color: $bg-1;
+    border-style: solid;
+  }
+
+  button {
+    font-family: $base-font-family;
+    font-size: $small-font-size;
+    padding: 0.2em 0.5em;
+    padding-top: 0.4em;
+    color: $button-1;
+    background-color: $button-1-bg;
+    cursor: pointer;
+    border: none;
+    border-radius: 0.4em;
+    transition-duration: 0.2s;
+  }
+
+  button:hover {
+    background-color: darken($button-1-bg, 5%);
+  }
+
+  button:active {
+    background-color: $base-text;
+    color: $bg-0;
+  }
+
+  textarea {
+    color: $base-text;
+    font-size: $code-font-size;
+    background-color: $bg-highlight;
+    padding: 0.1em 0.3em;
+    border-radius: 0.4em;
+    border: none;
+  }
+
+  ::-webkit-scrollbar { width: 6px; height: 6px; }
+  ::-webkit-scrollbar-track { background: #eee; }
+  ::-webkit-scrollbar-thumb { background: #ccc; }
+  ::-webkit-scrollbar-thumb:hover { background: #666; }
+  ::-webkit-scrollbar-corner { background: #00000000; }
+
+  ::selection {
+    color: $bg-0;
+    background: $base-text;
+  }
+}
+
+.dark {
+  body {
+    font-family: $base-font-family-dark;
+    font-size: $base-font-size-dark;
+    line-height: $base-line-height-dark;
+    font-weight: $base-font-weight-dark;
+    letter-spacing: $base-letter-spacing-dark;
+
+    color: $base-text-dark;
+    background-color: $bg-0-dark;
+
+    margin: 0;
+  }
+
+  /*
+  Links
+  */
+  a { color: $link-1-dark; text-decoration: none; }
+  a:visited { color: $link-1-dark; }
+  a:hover { text-decoration: underline; color: lighten($color: $link-1-dark, $amount: 5%)}
+
+  /*
+  Images
+  */
+  img {
+    margin-top: 1em + 2em;
+    margin-bottom: 2em;
+
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+
+    max-width: MIN($image-width-dark, $content-max-width-dark);
+    filter: brightness(100%);
+  }
+
+  /*
+  Image captions
+  */
+  img + em {
+    margin-top: -1.5em;
+    margin-bottom: 2em;
+
+    display: block;
+    text-align: center;
+
+    color: $grey-text-dark;
+  }
+
+  /*
+  Tables
+  */
+  table, th, td {
+    margin: 2em 1em;
+    padding: 0.3em 0.5em;
+
+    margin-left: auto;
+    margin-right: auto;
+
+    border: 1px solid $grey-text-dark;
+    border-collapse: collapse;
+  }
+
+  tr:nth-child(even) {
+    background-color: lighten($bg-table-dark, 5%);
+  }
+
+  tr:nth-child(odd) {
+    background-color: $bg-table-dark;
+  }
+
+  thead > tr {
+    background-color: darken($bg-table-dark, 5%) !important;
+  }
+
+  /*
+  Code and preformatted text
+  */
+  code {
+    color: $code-1-dark;
+    font-family: $code-font-family-dark;
+    font-size: $code-font-size-dark;
+    line-height: $code-line-height-dark;
+    font-weight: $code-font-weight-dark;
+    background-color: $bg-code-dark;
+    padding: 0.05em 0.2em;
+    border-radius: 0.4em;
+    border: 1px transparent solid;
+  }
+
+  figure {
+    margin: 0 0;
+  }
+
+  pre {
+    overflow-x: auto;
+    line-height: $code-line-height-dark;
+    border: 1px transparent solid;
+
+    > code {
+      color: $code-1-dark;
+      display: block;
+      margin: 0 0;
+      padding: 1em 1em;
+      border: none;
+      background-color: transparent;
+    }
+  }
+
+  /*
+  Quote
+  */
+  blockquote {
+    margin: 2em 0em;
+    padding: 0.5em 1em;
+    border-left: 4px solid darken($bg-quote-dark, 50%);
+    background-color: $bg-quote-dark;
+
+    p:first-child {
+      margin-top: 0;
+    }
+
+    p:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  /*
+  Headings
+  */
+  h1, h2, h3,
+  h4, h5, h6 {
+    margin-top: 1.5em;
+    margin-bottom: 0;
+    color: $heading-text-dark;
+    font-family: $heading-font-family-dark;
+    font-weight: $heading-font-weight-dark;
+    padding-bottom: 0.1em;
+  }
+
+  h1, h2 { border-bottom: 1px solid $bg-1-dark;}
+
+  h1 { font-size: 2em; }
+  h2 { font-size: 1.6em; }
+  h3 { font-size: 1.2em; }
+  h4 { font-size: 1em; }
+  h5 { font-size: 0.8em; }
+  h6 { font-size: 0.6em; }
+
+  /*
+  Breaks
+  */
+  hr {
+    margin-top: 1em;
+    margin-bottom: 1em;
+    height: 1px;
+    color: $bg-1-dark;
+    background-color: $bg-1-dark;
+    border-style: solid;
+  }
+
+  button {
+    font-family: $base-font-family-dark;
+    font-size: $small-font-size-dark;
+    padding: 0.2em 0.5em;
+    padding-top: 0.4em;
+    color: $button-1-dark;
+    background-color: $button-1-bg-dark;
+    cursor: pointer;
+    border: none;
+    border-radius: 0.4em;
+    transition-duration: 0.2s;
+  }
+
+  button:hover {
+    background-color: darken($button-1-bg-dark, 5%);
+  }
+
+  button:active {
+    background-color: $base-text-dark;
+    color: $bg-0-dark;
+  }
+
+  textarea {
+    color: $base-text-dark;
+    font-size: $code-font-size-dark;
+    background-color: $bg-highlight-dark;
+    padding: 0.1em 0.3em;
+    border-radius: 0.4em;
+    border: none;
+  }
+
+  ::-webkit-scrollbar { width: 6px; height: 6px; }
+  ::-webkit-scrollbar-track { background: #000; }
+  ::-webkit-scrollbar-thumb { background: #333; }
+  ::-webkit-scrollbar-thumb:hover { background: #444; }
+  ::-webkit-scrollbar-corner { background: #00000000; }
+
+  ::selection {
+    color: $bg-0-dark;
+    background: $base-text-dark;
+  }
+}

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en" id="root" class="light">
+{{ partial "head.html" . }}
+<body>
+	{{ partial "header.html" . }}
+	{{ partial "navbar.html" . }}
+
+	{{ block "sidebar" . }}{{ end }}
+
+	{{ block "main" . }}
+	<div class="wrapper-home">
+		
+		{{ block "title" . }}
+		<h1 class="page-title">{{ .Title }}</h1>
+		{{ end }}
+
+		{{ block "details" . }}{{ end }}
+
+		{{ block "content" . }}
+		<main>
+			{{ .Content }}
+
+			{{ block "list" . }}{{ end }}
+		</main>
+		{{ end }}
+	</div>
+	{{ end }}
+	
+	{{ partial "footer.html" . }}
+</body>
+</html>
+
+{{ block "nothing" . }}{{ end }}

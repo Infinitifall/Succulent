@@ -1,0 +1,185 @@
+@charset "utf-8";
+
+
+@font-face {
+  font-family: "ETBook";
+  src:
+    local('ETBookOT Roman'),
+    url("/fonts/et-book-ligatures-enabled/et-book-roman-old-style-figures/etbookot-roman-webfont.woff2"),
+    url("/fonts/et-book-ligatures-enabled/et-book-roman-old-style-figures/etbookot-roman-webfont.woff");
+}
+
+@font-face {
+  font-family: "ETBook";
+  src:
+    local('ETBookOT Bold'),
+    url("/fonts/et-book-ligatures-enabled/et-book-bold-line-figures/etbookot-bold-webfont.woff2"),
+    url("/fonts/et-book-ligatures-enabled/et-book-bold-line-figures/etbookot-bold-webfont.woff");
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: "ETBook";
+  src:
+    local('ETBookOT Italic'),
+    url("/fonts/et-book-ligatures-enabled/et-book-display-italic-old-style-figures/etbookot-italic-webfont.woff2"),
+    url("/fonts/et-book-ligatures-enabled/et-book-display-italic-old-style-figures/etbookot-italic-webfont.woff");
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Ubuntu Mono";
+  src:
+    local('Ubuntu Mono Regular'),
+    url("/fonts/Ubuntu_Mono/ubuntumono-regular-webfont.woff2"),
+    url("/fonts/Ubuntu_Mono/ubuntumono-regular-webfont.woff");
+}
+
+@font-face {
+  font-family: "Ubuntu Mono";
+  src:
+    local('Ubuntu Mono Bold'),
+    url("/fonts/Ubuntu_Mono/ubuntumono-bold-webfont.woff2"),
+    url("/fonts/Ubuntu_Mono/ubuntumono-bold-webfont.woff");
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: "Ubuntu Mono";
+  src:
+    local('Ubuntu Mono Bold Italic'),
+    url("/fonts/Ubuntu_Mono/ubuntumono-bolditalic-webfont.woff2"),
+    url("/fonts/Ubuntu_Mono/ubuntumono-bolditalic-webfont.woff");
+  font-style: italic;
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: "Ubuntu Mono";
+  src:
+    local('Ubuntu Mono Italic'),
+    url("/fonts/Ubuntu_Mono/ubuntumono-italic-webfont.woff2"),
+    url("/fonts/Ubuntu_Mono/ubuntumono-italic-webfont.woff");
+  font-style: italic;
+}
+
+
+//light theme
+
+$base-font-family: 'ETBook', serif;
+$heading-font-family: 'ETBook', serif;
+$navbar-font-family: 'ETBook', serif;
+
+$base-font-size: 20px;
+$base-line-height: 1.6;
+$code-line-height: 1.4;
+$base-letter-spacing: 0;
+
+$base-font-weight: 400;
+$title-font-weight: 600;
+$heading-font-weight: 400;
+$code-font-weight: 400;
+
+$small-font-size: $base-font-size * 0.8;
+$code-font-family: 'Ubuntu Mono', monospace;
+$code-font-size: $base-font-size * 0.85;
+$tag-font-size: $base-font-size * 0.75;
+$sidebar-font-size: $base-font-size * 0.9;
+$katex-font-size:  $base-font-size * 1.1;
+
+$heading-text: #333;
+$base-text: #333;
+$grey-text: #888;
+$link-1: #4270ab;
+$link-2: #4270ab;
+
+$code-1: #612f70;
+$bg-code:#f0e1f3;
+
+$code-tag: #2f6e70;
+$bg-tag:#e1f3f3;
+
+$bg-0:   #fff;
+$bg-1:   #ddd;
+$bg-highlight:   #fffdef;
+
+$bg-quote:   #f4f4f4;
+$bg-table: #fffdef;
+$bg-pre-border: #ddd;
+
+$button-1: #8638b0;
+$button-1-bg: #eee;
+
+$content-width: 800px;
+$sidebar-width: 300px;
+$gallery-width: 1000px;
+
+$image-width: 500px;
+$content-max-width: 95%;
+$screen-width-inflection: 1600px;
+$screen-width-mobile: 600px;
+$screen-width-tips: 1366px;
+
+
+// dark theme
+
+$base-font-family-dark: 'ETBook', serif;
+$heading-font-family-dark: 'ETBook', serif;
+$navbar-font-family-dark: 'ETBook', serif;
+
+$base-font-size-dark: 20px;
+$base-line-height-dark: 1.6;
+$code-line-height-dark: 1.4;
+$base-letter-spacing-dark: 0;
+
+$base-font-weight-dark: 400;
+$title-font-weight-dark: 600;
+$heading-font-weight-dark: 400;
+$code-font-weight-dark: 400;
+
+$small-font-size-dark: $base-font-size * 0.8;
+$code-font-family-dark: 'Ubuntu Mono', monospace;
+$code-font-size-dark: $base-font-size * 0.85;
+$tag-font-size-dark: $base-font-size * 0.75;
+$sidebar-font-size-dark: $base-font-size * 0.9;
+$katex-font-size-dark:  $base-font-size * 1.1;
+
+$heading-text-dark: #ccc;
+$base-text-dark: #ccc;
+$grey-text-dark: #999;
+$link-1-dark: #be4f47;
+$link-2-dark: #abd8e3;
+
+$code-1-dark: #c5adcc;
+$bg-code-dark:#383045;
+
+$code-tag-dark: #b6c6a7;
+$bg-tag-dark:#314241;
+
+$bg-0-dark:   #242220;
+$bg-1-dark:   #444;
+$bg-highlight-dark:   #1d1b1a;
+
+$bg-quote-dark:   #1c1b1a;
+$bg-table-dark: #181818;
+$bg-pre-border-dark: #2d2d2d;
+
+$button-1-dark: #9371b8;
+$button-1-bg-dark: #111;
+
+$content-width-dark: 800px;
+$sidebar-width-dark: 300px;
+$gallery-width-dark: 1000px;
+
+$image-width-dark: 500px;
+$content-max-width-dark: 95%;
+$screen-width-inflection-dark: 1600px;
+$screen-width-mobile-dark: 600px;
+$screen-width-tips-dark: 1366px;
+
+
+@import
+  "malis/base",
+  "malis/layout",
+  "malis/syntax-highlighting"
+;

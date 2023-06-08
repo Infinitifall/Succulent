@@ -1,0 +1,42 @@
+<head>
+	<meta charset="utf-8">
+
+	{{ $css := resources.Get "scss/malis.scss" | resources.ToCSS }}
+	<link rel='stylesheet' type='text/css' href='{{ $css.RelPermalink }}'>
+  
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta property="og:locale" content="en_US">
+	<meta property="og:type" content="website">
+  
+	<link rel="icon" type="image/x-icon" href='{{ printf "%s%s" (.Site.BaseURL) ("images/favicon.webp") }}'>
+	<meta property="og:image" content='{{ printf "%s%s" (.Site.BaseURL) ("images/logo.jpeg") }}'>
+
+	<title>{{ .Title }}</title>
+	<meta name="title" content='{{ .Title }}'>
+	<meta property="og:title" content='{{ .Title }}'>
+  
+	<meta property="article:published_time " content='{{ .Date }}'>
+
+	{{ if isset .Params "author" }}
+	<meta name="author" content='{{ .Params.author }}'>
+	{{ end }}
+	
+	{{ if isset .Params "excerpt" }}
+	<meta name="description" content='{{ .Params.excerpt }}'>
+	<meta property="og:description" content='{{ .Params.excerpt }}'>
+	{{ end }}
+
+	<meta name="twitter:card" content="summary">
+
+	<meta property="og:url" content="{{ .Site.BaseURL }}">
+  	<link rel="canonical" href="{{ .Site.BaseURL }}">
+
+	<script src='{{ printf "%s%s%s" (.Site.BaseURL) ("/scripts/theme-toggle.js?v=") (.Site.Params.css_js_version) }}'></script>
+	<script defer src='{{ printf "%s%s%s" (.Site.BaseURL) ("/scripts/links-newtab.js?v=") (.Site.Params.css_js_version) }}'></script>
+
+	{{ if and (isset .Params "latex") (.Params.latex)}}
+	{{ partial "latex.html" . }}
+	{{ end }}
+</head>
+
+  

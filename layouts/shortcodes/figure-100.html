@@ -1,0 +1,4 @@
+<div class="figure">
+    <img style="max-width:100%;" src='{{ printf "%s%s" (.Site.BaseURL) (.Get "src")  }}' alt='{{ .Get "alt" }}'></img>
+    <em>{{ .Get "em" | markdownify  }}</em>
+</div>

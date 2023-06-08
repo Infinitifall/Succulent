@@ -1,0 +1,23 @@
+{{ define "list" }}
+<ul class="post-list">
+	{{ range .Pages }}
+	<li  class="post-list">
+		<div class="post-date">
+			{{ .Date.Format "2006 Jan 02" }}
+		</div>
+		<h2 class="post-title"><a href="{{ .RelPermalink }}">{{ .Title }}</a></h2>
+		{{ if isset .Params "excerpt" }}
+			{{ .Params.excerpt }}
+		{{ end }}
+		
+		{{ if isset .Params "tags" }}
+		<div class="post-tags-list">
+			{{ range .Params.tags }}
+				<code class="post-tag">{{ . }}</code>
+			{{ end }}
+		</div>
+		{{ end }}
+	</li>
+	{{ end }}
+</ul>
+{{ end }}

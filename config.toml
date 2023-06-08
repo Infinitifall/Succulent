@@ -1,0 +1,10 @@
+baseURL = "https://infinitifall.net"
+
+[params]
+  author = "Infinitifall"
+  author_url = "https://github.com/Infinitifall/"
+  css_js_version = "0.1"
+
+[markup]
+  [markup.highlight]
+    noClasses = false

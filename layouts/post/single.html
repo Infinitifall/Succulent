@@ -1,0 +1,119 @@
+{{ define "sidebar" }}
+<div class="post-details">
+	<div class="post-details-inner">
+		<b>Details</b>
+		<ul>
+			<li>
+				{{ if not .Date.IsZero }}
+				{{ if and (isset .Params "updated") (gt ((.Params.updated | time).Unix) (.Date.Unix))}}
+				<div>
+					Updated on {{ (.Params.updated | time).Format "02 January, 2006" }}
+				</div>
+				{{else }}
+				<div>
+					Published  on {{ .Date.Format "02 January, 2006" }}
+				</div>
+				{{ end }}
+				{{ end }}
+			</li>
+			<li>
+				Authored by 
+				{{ if and (isset .Params "author") (isset .Params "author_url") }}
+				<a href="{{ .Params.author_url }}">{{ .Params.author }}</a>
+				{{ else }}
+				<a href="{{ .Site.Params.author_url }}">{{ .Site.Params.author }}</a>
+				{{ end }}
+			  </li>
+			<li>
+				Tagged
+				{{ range .Params.tags }}
+					<code class="page-tag">{{ . }}</code>
+				{{ end }}
+			</li>
+		</ul>
+	</div>
+	<div class="post-toc">
+		<b>Contents</b>
+		<ul>
+			<li><a href="#">{{ .Title }}</a></li>
+		</ul>
+		{{ partial "toc.html" . }}
+	</div>
+</div>
+{{ end }}
+
+
+{{ define "main" }}
+<div class="wrapper">
+	
+	{{ block "title" . }}
+	<h1 class="page-title">{{ .Title }}</h1>
+	{{ end }}
+
+	{{ block "details" . }}
+	<div class="post-details-inline">
+		<div class="navbar-date-author">
+			{{ if not .Date.IsZero }}
+			{{ if and (isset .Params "updated") (gt ((.Params.updated | time).Unix) (.Date.Unix))}}
+			<span>
+				Updated
+			</span>
+			{{else }}
+			<span>
+				Published
+			</span>
+			{{ end }}
+			{{ end }}
+
+			by
+
+			{{ if and (isset .Params "author") (isset .Params "author_url") }}
+			<a href="{{ .Params.author_url }}">{{ .Params.author }}</a>
+			{{ else }}
+			<a href="{{ .Site.Params.author_url }}">{{ .Site.Params.author }}</a>
+			{{ end }}
+
+			on
+
+			{{ if not .Date.IsZero }}
+			{{ if and (isset .Params "updated") (gt ((.Params.updated | time).Unix) (.Date.Unix))}}
+			<span>
+				{{ (.Params.updated | time).Format "02 January, 2006" }}
+			</span>
+			{{ else }}
+			<span>
+				{{ .Date.Format "02 January, 2006" }}
+			</span>
+			{{ end }}
+			{{ end }}
+		</div>
+		{{ if isset .Params "tags" }}
+			<div>
+				{{ range .Params.tags }}
+					<code class="page-tag">{{ . }}</code>
+				{{ end }}
+			</div>
+		{{ end }}
+	</div>
+
+	{{ if and (isset .Params "toc") (.Params.toc) (false) }}
+	<div class="post-toc-inline">
+		<b>Contents</b>
+		<ul>
+			<li><a href="#">{{ .Title }}</a></li>
+		</ul>
+		{{ partial "toc.html" . }}
+	</div>
+	{{ end }}
+
+	{{ end }}
+
+	{{ block "content" . }}
+	<main>
+		{{ .Content }}
+
+		{{ block "list" . }}{{ end }}
+	</main>
+	{{ end }}
+</div>
+{{ end }}

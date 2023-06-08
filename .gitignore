@@ -1,0 +1,8 @@
+# hugo stuff
+.hugo_build.lock
+public/
+resources/
+
+# user files
+content/
+static/images/

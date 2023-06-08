@@ -1,0 +1,32 @@
+{{ define "title" }}
+<h1 class="page-title">{{ .Title }}</h1>
+{{ end }}
+
+{{ define "list" }}
+<h1 class="home-title"> Articles </h1>
+<ul class="post-list">
+	{{ range .Pages }}
+	{{if eq (.Title) ("All posts")}}
+	{{ range .Pages }}
+	<li  class="post-list">
+		<div class="post-date">
+			{{ .Date.Format "2006 Jan 02" }}
+		</div>
+		<h2 class="post-title"><a href="{{ .RelPermalink }}">{{ .Title }}</a></h2>
+		{{ if isset .Params "excerpt" }}
+			{{ .Params.excerpt }}
+		{{ end }}
+		
+		{{ if isset .Params "tags" }}
+		<div class="post-tags-list">
+			{{ range .Params.tags }}
+				<code class="post-tag">{{ . }}</code>
+			{{ end }}
+		</div>
+		{{ end }}
+	</li>
+	{{ end }}
+	{{ end }}
+	{{ end }}
+</ul>
+{{ end }}
