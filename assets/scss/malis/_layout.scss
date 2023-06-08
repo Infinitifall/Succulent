@@ -54,8 +54,7 @@
   }
 
   .wrapper-bottom {
-    width: 100%;
-
+    max-width: MIN($content-width, $content-max-width);
     padding: 0 3vw;
     border-top: 1px $bg-1 solid;
     padding-bottom: 0.1em;
@@ -389,8 +388,7 @@
   }
 
   .wrapper-bottom {
-    width: 100%;
-
+    max-width: MIN($content-width, $content-max-width);
     padding: 0 3vw;
     border-top: 1px transparent solid;
     background: $bg-highlight-dark;
