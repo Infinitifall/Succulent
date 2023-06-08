@@ -1,10 +1,16 @@
 {{ define "list" }}
 <ul class="post-list">
 	{{ range .Pages }}
-	<li  class="post-list">
+	<li class="post-list">
+		{{ if and (isset .Params "updated") (gt ((.Params.updated | time).Unix) (.Date.Unix))}}
 		<div class="post-date">
-			{{ .Date.Format "2006 Jan 02" }}
+			{{ (.Params.updated | time).Format "02 January, 2006" }}
 		</div>
+		{{else }}
+		<div>
+			{{ .Date.Format "02 January, 2006" }}
+		</div>
+		{{ end }}
 		<h2 class="post-title"><a href="{{ .RelPermalink }}">{{ .Title }}</a></h2>
 		{{ if isset .Params "excerpt" }}
 			{{ .Params.excerpt }}

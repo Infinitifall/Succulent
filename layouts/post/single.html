@@ -4,7 +4,6 @@
 		<b>Details</b>
 		<ul>
 			<li>
-				{{ if not .Date.IsZero }}
 				{{ if and (isset .Params "updated") (gt ((.Params.updated | time).Unix) (.Date.Unix))}}
 				<div>
 					Updated on {{ (.Params.updated | time).Format "02 January, 2006" }}
@@ -13,7 +12,6 @@
 				<div>
 					Published  on {{ .Date.Format "02 January, 2006" }}
 				</div>
-				{{ end }}
 				{{ end }}
 			</li>
 			<li>
@@ -53,7 +51,6 @@
 	{{ block "details" . }}
 	<div class="post-details-inline">
 		<div class="navbar-date-author">
-			{{ if not .Date.IsZero }}
 			{{ if and (isset .Params "updated") (gt ((.Params.updated | time).Unix) (.Date.Unix))}}
 			<span>
 				Updated
@@ -62,7 +59,6 @@
 			<span>
 				Published
 			</span>
-			{{ end }}
 			{{ end }}
 
 			by
@@ -75,7 +71,6 @@
 
 			on
 
-			{{ if not .Date.IsZero }}
 			{{ if and (isset .Params "updated") (gt ((.Params.updated | time).Unix) (.Date.Unix))}}
 			<span>
 				{{ (.Params.updated | time).Format "02 January, 2006" }}
@@ -84,7 +79,6 @@
 			<span>
 				{{ .Date.Format "02 January, 2006" }}
 			</span>
-			{{ end }}
 			{{ end }}
 		</div>
 		{{ if isset .Params "tags" }}
