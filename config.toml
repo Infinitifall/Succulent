@@ -3,7 +3,7 @@ baseURL = "https://infinitifall.net"
 [params]
   author = "Infinitifall"
   author_url = "https://infinitifall.net"
-  css_js_version = "4.1"
+  css_js_version = "5.0"
 
 [markup]
   [markup.highlight]

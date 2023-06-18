@@ -28,6 +28,38 @@
 }
 
 @font-face {
+  font-family: "Roboto";
+  src:
+    local('Roboto Regular'),
+    url("/fonts/Roboto/Roboto-Regular.ttf");
+}
+
+@font-face {
+  font-family: "Roboto";
+  src:
+    local('Roboto Bold'),
+    url("/fonts/Roboto/Roboto-Bold.ttf");
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: "Roboto";
+  src:
+    local('Roboto Italic'),
+    url("/fonts/Roboto/Roboto-Italic.ttf");
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Roboto";
+  src:
+    local('Roboto Bold Italic'),
+    url("/fonts/Roboto/Roboto-BoldItalic.ttf");
+  font-style: italic;
+  font-weight: bold;
+}
+
+@font-face {
   font-family: "Ubuntu Mono";
   src:
     local('Ubuntu Mono Regular'),
@@ -66,24 +98,24 @@
 
 //light theme
 
-$base-font-family: 'ETBook', serif;
-$heading-font-family: 'ETBook', serif;
-$navbar-font-family: 'ETBook', serif;
+$base-font-family: Helvetica, Arial, sans-serif;
+$heading-font-family: Helvetica, Arial, sans-serif;
+$navbar-font-family: 'Times New Roman', Times, serif;
 
-$base-font-size: 20px;
+$base-font-size: 16px;
 $base-line-height: 1.6;
 $code-line-height: 1.4;
 $base-letter-spacing: 0;
 
 $base-font-weight: 400;
 $title-font-weight: 600;
-$heading-font-weight: 400;
+$heading-font-weight: 600;
 $code-font-weight: 400;
 
 $small-font-size: $base-font-size * 0.8;
 $code-font-family: 'Ubuntu Mono', monospace;
-$code-font-size: $base-font-size * 0.85;
-$tag-font-size: $base-font-size * 0.75;
+$code-font-size: $base-font-size * 0.95;
+$tag-font-size: $base-font-size * 0.85;
 $sidebar-font-size: $base-font-size * 0.9;
 $katex-font-size:  $base-font-size * 1.1;
 
@@ -123,24 +155,24 @@ $screen-width-tips: 1366px;
 
 // dark theme
 
-$base-font-family-dark: 'ETBook', serif;
-$heading-font-family-dark: 'ETBook', serif;
-$navbar-font-family-dark: 'ETBook', serif;
+$base-font-family-dark: Helvetica, Arial, sans-serif;
+$heading-font-family-dark: Helvetica, Arial, sans-serif;
+$navbar-font-family-dark: 'Times New Roman', Times, serif;
 
-$base-font-size-dark: 20px;
+$base-font-size-dark: 16px;
 $base-line-height-dark: 1.6;
 $code-line-height-dark: 1.4;
 $base-letter-spacing-dark: 0;
 
 $base-font-weight-dark: 400;
 $title-font-weight-dark: 600;
-$heading-font-weight-dark: 400;
+$heading-font-weight-dark: 600;
 $code-font-weight-dark: 400;
 
 $small-font-size-dark: $base-font-size * 0.8;
 $code-font-family-dark: 'Ubuntu Mono', monospace;
-$code-font-size-dark: $base-font-size * 0.85;
-$tag-font-size-dark: $base-font-size * 0.75;
+$code-font-size-dark: $base-font-size * 0.95;
+$tag-font-size-dark: $base-font-size * 0.85;
 $sidebar-font-size-dark: $base-font-size * 0.9;
 $katex-font-size-dark:  $base-font-size * 1.1;
 
