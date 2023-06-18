@@ -2,7 +2,7 @@
 	<meta charset="utf-8">
 
 	{{ $css := resources.Get "scss/malis.scss" | resources.ToCSS }}
-	<link rel='stylesheet' type='text/css' href='{{ $css.RelPermalink }}'>
+	<link rel='stylesheet' type='text/css' href='{{ printf "%s%s%s" ($css.RelPermalink) ("?v=") (.Site.Params.css_js_version) }}'>
   
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta property="og:locale" content="en_US">
