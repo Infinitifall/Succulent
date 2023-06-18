@@ -125,11 +125,11 @@ $grey-text: #888;
 $link-1: #4270ab;
 $link-2: #4270ab;
 
-$code-1: #612f70;
-$bg-code:#f0e1f3;
+$code-1: #d1224e;
+$bg-code:#f9f9f9;
 
-$code-tag: #2f6e70;
-$bg-tag:#e1f3f3;
+$code-tag: #1d8b7c;
+$bg-tag:#f9f9f9;
 
 $bg-0:   #fff;
 $bg-1:   #ddd;
@@ -138,6 +138,8 @@ $bg-highlight:   #fffdef;
 $bg-quote:   #f4f4f4;
 $bg-table: #fffdef;
 $bg-pre-border: #ddd;
+$bg-sidebar: #fff;
+$bg-sidebar-border: #ddd;
 
 $button-1: #8638b0;
 $button-1-bg: #eee;
@@ -178,23 +180,25 @@ $katex-font-size-dark:  $base-font-size * 1.1;
 
 $heading-text-dark: #ccc;
 $base-text-dark: #ccc;
-$grey-text-dark: #999;
+$grey-text-dark: #777;
 $link-1-dark: #be4f47;
-$link-2-dark: #abd8e3;
+$link-2-dark: #be4f47;
 
-$code-1-dark: #c5adcc;
-$bg-code-dark:#383045;
+$code-1-dark: #c483b6;
+$bg-code-dark:#1a1a1a;
 
-$code-tag-dark: #b6c6a7;
-$bg-tag-dark:#314241;
+$code-tag-dark: #8dbeba;
+$bg-tag-dark:#1a1a1a;
 
-$bg-0-dark:   #242220;
-$bg-1-dark:   #444;
-$bg-highlight-dark:   #1d1b1a;
+$bg-0-dark:   #232220;
+$bg-1-dark:   #333;
+$bg-highlight-dark:   #1f1d1b;
 
-$bg-quote-dark:   #1c1b1a;
-$bg-table-dark: #181818;
+$bg-quote-dark:   #1f1d1b;
+$bg-table-dark: #1f1d1b;
 $bg-pre-border-dark: #2d2d2d;
+$bg-sidebar-dark: #201f1c;
+$bg-sidebar-border-dark: #1c1c1c;
 
 $button-1-dark: #9371b8;
 $button-1-bg-dark: #111;

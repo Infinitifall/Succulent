@@ -83,8 +83,8 @@
     font-weight: $code-font-weight;
     background-color: $bg-code;
     padding: 0.05em 0.2em;
-    border-radius: 0.4em;
-    border: 1px darken($bg-code, 10%) solid;
+    border-radius: 0.2em;
+    border: 1px $bg-pre-border solid;
   }
 
   figure {
@@ -287,8 +287,8 @@
     font-weight: $code-font-weight-dark;
     background-color: $bg-code-dark;
     padding: 0.05em 0.2em;
-    border-radius: 0.4em;
-    border: 1px transparent solid;
+    border-radius: 0.2em;
+    border: 1px $bg-pre-border-dark solid;
   }
 
   figure {
