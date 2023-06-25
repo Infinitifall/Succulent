@@ -113,9 +113,9 @@ $heading-font-weight: 600;
 $code-font-weight: 400;
 
 $small-font-size: $base-font-size * 0.8;
-$code-font-family: 'Ubuntu Mono', monospace;
-$code-font-size: $base-font-size * 0.95;
-$tag-font-size: $base-font-size * 0.85;
+$code-font-family: monospace;
+$code-font-size: $base-font-size * 0.85;
+$tag-font-size: $base-font-size * 0.75;
 $sidebar-font-size: $base-font-size * 0.9;
 $katex-font-size:  $base-font-size * 1.1;
 
@@ -172,9 +172,9 @@ $heading-font-weight-dark: 600;
 $code-font-weight-dark: 400;
 
 $small-font-size-dark: $base-font-size * 0.8;
-$code-font-family-dark: 'Ubuntu Mono', monospace;
-$code-font-size-dark: $base-font-size * 0.95;
-$tag-font-size-dark: $base-font-size * 0.85;
+$code-font-family-dark: monospace;
+$code-font-size-dark: $base-font-size * 0.85;
+$tag-font-size-dark: $base-font-size * 0.75;
 $sidebar-font-size-dark: $base-font-size * 0.9;
 $katex-font-size-dark:  $base-font-size * 1.1;
 
