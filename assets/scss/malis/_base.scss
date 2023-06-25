@@ -60,12 +60,8 @@
     border-collapse: collapse;
   }
 
-  tr:nth-child(even) {
+  tr {
     background-color: $bg-table;
-  }
-
-  tr:nth-child(odd) {
-    background-color: lighten($bg-table, 2.5%);
   }
 
   thead > tr {
@@ -264,11 +260,7 @@
     border-collapse: collapse;
   }
 
-  tr:nth-child(even) {
-    background-color: lighten($bg-table-dark, 5%);
-  }
-
-  tr:nth-child(odd) {
+  tr {
     background-color: $bg-table-dark;
   }
 
@@ -298,7 +290,7 @@
   pre {
     overflow-x: auto;
     line-height: $code-line-height-dark;
-    border: 1px transparent solid;
+    border: 1px $bg-pre-border-dark solid;
 
     > code {
       color: $code-1-dark;

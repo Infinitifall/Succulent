@@ -19,12 +19,12 @@
 
   .wrapper-top {
     padding: 0.2em 0;
-    border-bottom: 1px $bg-1 solid;
+    border-bottom: 1px $bg-sidebar-border solid;
     padding-bottom: 0.2em;
 
     position: fixed;
     width: 100%;
-    background-color: $bg-0;
+    background-color: $bg-sidebar;
     top: 0;
     z-index: 1;
 
@@ -57,7 +57,8 @@
     max-width: 100%;
     min-height: 1em;
     padding: 0 3vw;
-    border-top: 1px $bg-1 solid;
+    border-top: 1px $bg-sidebar-border solid;
+    background: $bg-sidebar;
     padding-bottom: 0.1em;
   }
 
@@ -306,6 +307,7 @@
       display: block;
       border: 1px solid $bg-1;
       border-radius: 0.5em;
+      background-color: $bg-sidebar-border;
       padding: 1em 1em;
       margin-bottom: 2em;
       max-width: MIN($content-width, $content-max-width);
@@ -358,7 +360,7 @@
 
   .wrapper-top {
     padding: 0.2em 0;
-    border-bottom: 1px lighten($bg-highlight-dark, 10%) solid;
+    border-bottom: 1px $bg-sidebar-border-dark solid;
     padding-bottom: 0.2em;
 
     font-family: $navbar-font-family-dark;
@@ -366,7 +368,7 @@
 
     position: fixed;
     width: 100%;
-    background-color: $bg-highlight-dark;
+    background-color: $bg-sidebar-dark;
     top: 0;
     z-index: 1;
 
@@ -396,8 +398,8 @@
     max-width: 100%;
     min-height: 1em;
     padding: 0 3vw;
-    border-top: 1px transparent solid;
-    background: $bg-highlight-dark;
+    border-top: 1px $bg-sidebar-border-dark solid;
+    background: $bg-sidebar-dark;
     padding-bottom: 0.1em;
   }
 
@@ -645,7 +647,7 @@
     @media only screen and (max-width: $screen-width-inflection-dark) {
       display: block;
       border: 1px transparent solid;
-      background-color: $bg-highlight-dark;
+      background-color: $bg-sidebar-border-dark;
       border-radius: 0.5em;
       padding: 1em 1em;
       margin-bottom: 2em;
