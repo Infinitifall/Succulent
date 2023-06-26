@@ -5,7 +5,7 @@ A blog template built with Hugo
 ## Features
 
 - Tactile and minimalist theme
-- Base page size < 256kB
+- Base page size < 64kB, with latex enabled < 450kB
 - Responsive design, looks good on Desktop, Laptop, Tablet and Mobile
 - Embeds on social media sites like Facebook, Twitter, Slack
 - KaTeX to render math equations
