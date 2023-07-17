@@ -31,13 +31,4 @@ hugo
 
 ![Light theme screenshot of text and quotes](static/images/light.jpeg)
 
-![Light theme screenshot of image code and latex](static/images/light2.jpeg)
-
-![Light theme screenshot  markdown lists and tables](static/images/light3.jpeg)
-
 ![Dark theme screenshot of text and quotes](static/images/dark.jpeg)
-
-![Dark theme screenshot  of image code and latex](static/images/dark2.jpeg)
-
-![Dark theme screenshot of markdown lists and tables](static/images/dark3.jpeg)
-
