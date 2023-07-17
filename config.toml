@@ -1,7 +1,7 @@
 baseURL = "https://infinitifall.net"
 
 [params]
-  css_js_version = "6.0"
+  css_js_version = "6.5"
 
 [markup]
   [markup.highlight]
