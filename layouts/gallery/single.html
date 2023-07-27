@@ -1,8 +1,18 @@
 {{ define "main" }}
 <div class="wrapper-gallery">
+
+	{{ partial "theme-toggle" }}
 		
 	{{ block "title" . }}
 	<h1 class="page-title">{{ .Title }}</h1>
+	{{ end }}
+
+	{{ block "details" . }}
+	<div class="page-details-inline">
+		<div class="go-home">
+			<a href="/">Go home</a>
+		</div>
+	</div>
 	{{ end }}
 
 	{{ block "content" . }}

@@ -1,47 +1,39 @@
-{{ define "sidebar" }}
-<div class="post-details">
-	<div class="post-toc">
-		<b>Contents</b>
-		<ul>
-			<li><a href="#">{{ .Title }}</a></li>
-		</ul>
-		{{ partial "toc.html" . }}
-	</div>
-</div>
-{{ end }}
-
-
 {{ define "main" }}
 <div class="wrapper">
-	
+
+	{{ partial "theme-toggle" }}
+
 	{{ block "title" . }}
 	<h1 class="page-title">{{ .Title }}</h1>
 	{{ end }}
 
 	{{ block "details" . }}
-	<div class="post-details-inline">
-		<div class="navbar-date-author">
-			<span>
-				Published {{ .Date.Format "02 Jan 2006" }}
-			</span>
-
-			{{ if and (isset .Params "updated") (gt ((.Params.updated | time).Unix) (.Date.Unix))}}
-			<span>
-				, Updated {{ (.Params.updated | time).Format "02 Jan 2006" }}
-			</span>
-			{{ end }}
-		</div>
-		{{ if isset .Params "tags" }}
-			<div>
+	<div class="page-details-inline">
+		<!-- {{ if isset .Params "tags" }}
+			<div class="page-tags">
 				{{ range .Params.tags }}
 					<code class="page-tag">{{ . }}</code>
 				{{ end }}
 			</div>
-		{{ end }}
+		{{ end }} -->
+		<div class="page-date">
+			<div>
+				Published {{ .Date.Format "02 Jan 2006" }}
+			</div>
+
+			<!-- {{ if and (isset .Params "updated") (gt ((.Params.updated | time).Unix) (.Date.Unix))}}
+			<div>
+				Updated {{ (.Params.updated | time).Format "02 Jan 2006" }}
+			</div>
+			{{ end }}-->
+		</div>
+		<div class="go-home">
+			<a href="{{ (index .Ancestors 0).RelPermalink }}">See all posts</a>
+		</div>
 	</div>
 
 	{{ if (false) }}
-	<div class="post-toc-inline">
+	<div class="page-toc-inline">
 		<b>Contents</b>
 		<ul>
 			<li><a href="#">{{ .Title }}</a></li>
@@ -59,12 +51,5 @@
 		{{ block "list" . }}{{ end }}
 	</main>
 	{{ end }}
-</div>
-{{ end }}
-
-{{ define "bottom" }}
-<div class="wrapper-bottom">
-	<nav class="navbar-bottom">
-	</nav>
 </div>
 {{ end }}

@@ -77,25 +77,13 @@
   Styling for the page
   */
 
-  .page-date {
-    color: $grey-text;
-  }
-
-  .page-tag {
-    font-size: $tag-font-size;
-    color: $code-tag;
-    background-color: $bg-tag;
-    border: 1px $bg-pre-border solid;
-  }
-
   .page-title {
     a { color: $base-text; }
     a:hover { color: $base-text; }
     a:visited { color: $base-text; }
-    text-align: center;
-    margin-top: 0.5em;
+    margin-top: 2em;
     margin-bottom: 0.25em;
-    font-size: 2.3em;
+    font-size: 2.2em;
     font-weight: $title-font-weight;
     border-bottom: 1px solid $bg-1;
   }
@@ -223,7 +211,7 @@
   Styling for details sidebar
   */
 
-  .post-details {
+  .page-details {
     user-select: none;
     font-size: $sidebar-font-size;
     float: left;
@@ -252,7 +240,7 @@
       padding-left: 1em;
     }
 
-    .post-toc {
+    .page-toc {
       border: 1px solid $bg-1;
       border-radius: 0.5em;
       padding: 1em 1em 1em 1.5em;
@@ -268,21 +256,37 @@
   Styling for details inline
   */
 
-  .post-details-inline {
+  .page-details-inline {
     user-select: none;
     display: block;
+    min-height: 1em;
     color: $grey-text;
     font-size: $small-font-size;
-    text-align: center;
     margin-top: 1em;
-    margin-bottom: 2em;
+    margin-bottom: 3em;
 
-    .navbar-date-author {
+    .page-tags {
       margin-bottom: 0.5em;
+  
+      .page-tag {
+        font-size: $tag-font-size;
+        color: $code-tag;
+        background-color: $bg-tag;
+        border: 1px $bg-pre-border solid;
+      }
+    }
+
+    .go-home {
+      float: right;
+    }
+
+    .page-date {
+      display: inline-block;
+      color: $grey-text;
     }
   }
 
-  .post-toc-inline {
+  .page-toc-inline {
     display: none;
     user-select: none;
 
@@ -311,6 +315,15 @@
         padding-left: 1em;
       }
     }
+  }
+
+  /*
+  Styling for theme toggle
+  */
+
+  .theme-toggle-parent {
+    color: $grey-text;
+    float: right;
   }
 
   /*
@@ -401,25 +414,13 @@
   Styling for the page
   */
 
-  .page-date {
-    color: $grey-text-dark;
-  }
-
-  .page-tag {
-    font-size: $tag-font-size-dark;
-    color: $code-tag-dark;
-    background-color: $bg-tag-dark;
-    border: 1px $bg-pre-border-dark solid;
-  }
-
   .page-title {
     a { color: $base-text-dark; }
     a:hover { color: $base-text-dark; }
     a:visited { color: $base-text-dark; }
-    text-align: center;
-    margin-top: 0.5em;
+    margin-top: 2em;
     margin-bottom: 0.25em;
-    font-size: 2.3em;
+    font-size: 2.2em;
     font-weight: $title-font-weight-dark;
     border-bottom: 1px solid $bg-1-dark;
   }
@@ -547,7 +548,7 @@
   Styling for details sidebar
   */
 
-  .post-details {
+  .page-details {
     user-select: none;
     font-size: $sidebar-font-size-dark;
     float: left;
@@ -576,7 +577,7 @@
       padding-left: 1em;
     }
 
-    .post-toc {
+    .page-toc {
       border: 1px transparent solid;
       border-radius: 0.5em;
       padding: 1em 1em 1em 1.5em;
@@ -592,21 +593,37 @@
   Styling for details inline
   */
 
-  .post-details-inline {
+  .page-details-inline {
     user-select: none;
     display: block;
+    min-height: 1em;
     color: $grey-text-dark;
     font-size: $small-font-size-dark;
-    text-align: center;
     margin-top: 1em;
-    margin-bottom: 2em;
+    margin-bottom: 3em;
 
-    .navbar-date-author {
+    .page-tags {
       margin-bottom: 0.5em;
+  
+      .page-tag {
+        font-size: $tag-font-size-dark;
+        color: $code-tag-dark;
+        background-color: $bg-tag-dark;
+        border: 1px $bg-pre-border-dark solid;
+      }
+    }
+
+    .go-home {
+      float: right;
+    }
+
+    .page-date {
+      display: inline-block;
+      color: $grey-text-dark;
     }
   }
 
-  .post-toc-inline {
+  .page-toc-inline {
     display: none;
     user-select: none;
 
@@ -635,6 +652,15 @@
         padding-left: 1em;
       }
     }
+  }
+
+  /*
+  Styling for theme toggle
+  */
+
+  .theme-toggle-parent {
+    color: $grey-text-dark;
+    float: right;
   }
 
   /*

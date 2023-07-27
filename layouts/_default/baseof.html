@@ -3,12 +3,13 @@
 {{ partial "head.html" . }}
 <body>
 	{{ partial "header.html" . }}
-	{{ partial "navbar.html" . }}
 
 	{{ block "sidebar" . }}{{ end }}
 
 	{{ block "main" . }}
 	<div class="wrapper-home">
+
+		{{ partial "theme-toggle" }}
 		
 		{{ block "title" . }}
 		<h1 class="page-title">{{ .Title }}</h1>
