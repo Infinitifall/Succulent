@@ -1,4 +1,6 @@
 <div class="figure">
     <img src='{{ printf "%s%s" (.Site.BaseURL) (.Get "src")  }}' alt='{{ .Get "alt" }}'></img>
-    <em>{{ .Get "em" | markdownify  }}</em>
+    {{ if isset .Params "em"}}
+    <em>{{ .Get "em" | markdownify }}</em>
+    {{ end }}
 </div>

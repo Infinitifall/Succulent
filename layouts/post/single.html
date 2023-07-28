@@ -18,14 +18,14 @@
 		{{ end }} -->
 		<div class="page-date">
 			<div>
-				Published {{ .Date.Format "02 Jan 2006" }}
+				Published {{ .Date.Format "2006, Jan 02" }}
 			</div>
 
 			<!-- {{ if and (isset .Params "updated") (gt ((.Params.updated | time).Unix) (.Date.Unix))}}
 			<div>
-				Updated {{ (.Params.updated | time).Format "02 Jan 2006" }}
+				Updated {{ (.Params.updated | time).Format "2006, Jan 02" }}
 			</div>
-			{{ end }}-->
+			{{ end }} -->
 		</div>
 		<div class="go-home">
 			<a href="{{ (index .Ancestors 0).RelPermalink }}">See all posts</a>

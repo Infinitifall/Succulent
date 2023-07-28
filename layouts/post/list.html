@@ -12,11 +12,11 @@
 	<li class="post-list">
 		{{ if and (isset .Params "updated") (gt ((.Params.updated | time).Unix) (.Date.Unix))}}
 		<div class="post-date">
-			{{ (.Params.updated | time).Format "02 Jan, 2006" }}
+			{{ (.Params.updated | time).Format "2006, Jan 02" }}
 		</div>
 		{{else }}
 		<div class="post-date">
-			{{ .Date.Format "02 Jan, 2006" }}
+			{{ .Date.Format "2006, Jan 02" }}
 		</div>
 		{{ end }}
 		<h2 class="post-title"><a href="{{ .RelPermalink }}">{{ .Title }}</a></h2>
