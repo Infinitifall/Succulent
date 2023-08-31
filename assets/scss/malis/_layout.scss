@@ -81,7 +81,8 @@
     a { color: $base-text; }
     a:hover { color: $base-text; }
     a:visited { color: $base-text; }
-    margin-top: 2em;
+    margin-top: 1em;
+    text-align: center;
     margin-bottom: 0.25em;
     font-size: 2.2em;
     font-weight: $title-font-weight;
@@ -418,7 +419,8 @@
     a { color: $base-text-dark; }
     a:hover { color: $base-text-dark; }
     a:visited { color: $base-text-dark; }
-    margin-top: 2em;
+    margin-top: 1em;
+    text-align: center;
     margin-bottom: 0.25em;
     font-size: 2.2em;
     font-weight: $title-font-weight-dark;
