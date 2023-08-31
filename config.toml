@@ -1,7 +1,7 @@
 baseURL = "https://infinitifall.net"
 
 [params]
-  css_js_version = "7.11"  # change to bypass browser cache
+  css_js_version = "8.2"  # change to bypass browser cache
 
 [markup]
   [markup.highlight]

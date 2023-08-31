@@ -260,6 +260,7 @@
   .page-details-inline {
     user-select: none;
     display: block;
+    text-align: center;
     min-height: 1em;
     color: $grey-text;
     font-size: $small-font-size;
@@ -598,6 +599,7 @@
   .page-details-inline {
     user-select: none;
     display: block;
+    text-align: center;
     min-height: 1em;
     color: $grey-text-dark;
     font-size: $small-font-size-dark;

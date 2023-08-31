@@ -1,6 +1,8 @@
-{{ define "main" }}
-
+{{ define "sidebar" }}
 {{ partial "sidebar.html" .}}
+{{ end }}
+
+{{ define "main" }}
 
 <div class="wrapper">
 
@@ -10,13 +12,13 @@
 
 	{{ block "details" . }}
 	<div class="page-details-inline">
-		<!-- {{ if isset .Params "tags" }}
+		{{ if isset .Params "tags" }}
 			<div class="page-tags">
 				{{ range .Params.tags }}
 					<code class="page-tag">{{ . }}</code>
 				{{ end }}
 			</div>
-		{{ end }} -->
+		{{ end }}
 		<div class="page-date">
 			<div>
 				Published {{ .Date.Format "2006, Jan 02" }}
@@ -50,4 +52,7 @@
 	</main>
 	{{ end }}
 </div>
+
+{{ partial "navbar-bottom.html" . }}
+
 {{ end }}
