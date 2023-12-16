@@ -2,8 +2,6 @@
 
 A blog template built with Hugo
 
-## Features
-
 - Tactile and minimalist theme
 - Base page size < 64kB, with latex enabled < 450kB
 - Responsive design, looks good on Desktop, Laptop, Tablet and Mobile
@@ -13,9 +11,13 @@ A blog template built with Hugo
 
 ## Install
 
-Install [Hugo](https://gohugo.io/). It's available in the official repositories of all the major distributions. On Arch Linux, this would be `sudo pacman -S hugo`. Then clone this repo
+Install [Hugo](https://gohugo.io/). It's available in the official repositories of all major Linux distributions
+
+- Debian/Ubuntu based: `sudo apt install hugo`
+- Arch based: `sudo pacman -S hugo`
 
 ```bash
+#clone repo
 git clone https://github.com/Infinitifall/Succulent
 cd Succulent
 
