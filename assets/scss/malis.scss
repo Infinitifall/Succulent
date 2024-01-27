@@ -28,6 +28,29 @@
 }
 
 @font-face {
+  font-family: "Libre Baskerville";
+  src:
+    local('Libre Baskerville Regular'),
+    url("/fonts/Libre_Baskerville/LibreBaskerville-Regular.ttf");
+}
+
+@font-face {
+  font-family: "Libre Baskerville";
+  src:
+    local('Libre Baskerville Bold'),
+    url("/fonts/Libre_Baskerville/LibreBaskerville-Bold.ttf");
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: "Libre Baskerville";
+  src:
+    local('Libre Baskerville Italic'),
+    url("/fonts/Libre_Baskerville/LibreBaskerville-Italic.ttf");
+  font-style: italic;
+}
+
+@font-face {
   font-family: "Roboto";
   src:
     local('Roboto Regular'),
@@ -127,7 +150,6 @@ $link-2: #4270ab;
 
 $code-1: #d1224e;
 $bg-code:#f9f9f9;
-
 $code-tag: #1d8b7c;
 $bg-tag:#f9f9f9;
 
@@ -144,11 +166,10 @@ $bg-sidebar-border: #ddd;
 $button-1: #8638b0;
 $button-1-bg: #eee;
 
-$content-width: 750px;
+$content-width: 900px;
 $sidebar-width: 300px;
-$gallery-width: 900px;
-
-$image-width: 650px;
+$gallery-width: 1000px;
+$image-width: 700px;
 $content-max-width: 95%;
 $screen-width-inflection: 1600px;
 $screen-width-mobile: 600px;
@@ -178,36 +199,34 @@ $tag-font-size-dark: $base-font-size * 0.75;
 $sidebar-font-size-dark: $base-font-size * 0.9;
 $katex-font-size-dark:  $base-font-size * 1.1;
 
-$heading-text-dark: #eee;
-$base-text-dark: #eee;
+$heading-text-dark: #ccc;
+$base-text-dark: #ddd;
 $grey-text-dark: #888;
-$link-1-dark: #6ecdc0;
-$link-2-dark: #6ecdc0;
+$link-1-dark: #af95d6;
+$link-2-dark: #af95d6;
 
-$code-1-dark: #e9a9db;
-$bg-code-dark:#1b1b1b;
-
-$code-tag-dark: #bbb;
-$bg-tag-dark:#1b1b1b;
+$code-1-dark: #9bc176;
+$bg-code-dark:#111;
+$code-tag-dark: #7aa9b9;
+$bg-tag-dark:#111;
 
 $bg-0-dark:   #1d1d1d;
-$bg-1-dark:   #333;
-$bg-highlight-dark:   #151515;
+$bg-1-dark:   #2a2a2a;
+$bg-highlight-dark:   #111;
 
 $bg-quote-dark:   #151515;
 $bg-table-dark: #222;
 $bg-pre-border-dark: #222;
-$bg-sidebar-dark: #1b1b1b;
+$bg-sidebar-dark: #181818;
 $bg-sidebar-border-dark: #222;
 
 $button-1-dark: #9371b8;
 $button-1-bg-dark: #111;
 
-$content-width-dark: 750px;
+$content-width-dark: 900px;
 $sidebar-width-dark: 300px;
-$gallery-width-dark: 900px;
-
-$image-width-dark: 650px;
+$gallery-width-dark: 1000px;
+$image-width-dark: 700px;
 $content-max-width-dark: 95%;
 $screen-width-inflection-dark: 1600px;
 $screen-width-mobile-dark: 600px;

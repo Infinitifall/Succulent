@@ -31,6 +31,8 @@
     margin-right: auto;
 
     max-width: MIN($image-width, $content-max-width);
+
+    border: 1px solid $bg-1;
   }
 
   /*
@@ -125,7 +127,7 @@
   */
   h1, h2, h3,
   h4, h5, h6 {
-    margin-top: 1.5em;
+    margin-top: 2.5em;
     margin-bottom: 0;
     color: $heading-text;
     font-family: $heading-font-family;
@@ -231,6 +233,8 @@
 
     max-width: MIN($image-width-dark, $content-max-width-dark);
     filter: brightness(100%);
+
+    border: 1px solid $bg-1-dark;
   }
 
   /*
@@ -280,7 +284,7 @@
     background-color: $bg-code-dark;
     padding: 0.05em 0.2em;
     border-radius: 0.2em;
-    border: 1px $bg-pre-border-dark solid;
+    border: 1px transparent solid;
   }
 
   figure {
@@ -290,7 +294,7 @@
   pre {
     overflow-x: auto;
     line-height: $code-line-height-dark;
-    border: 1px $bg-pre-border-dark solid;
+    border: 1px transparent solid;
 
     > code {
       color: $code-1-dark;
@@ -325,7 +329,7 @@
   */
   h1, h2, h3,
   h4, h5, h6 {
-    margin-top: 1.5em;
+    margin-top: 2.5em;
     margin-bottom: 0;
     color: $heading-text-dark;
     font-family: $heading-font-family-dark;

@@ -111,7 +111,7 @@
   */
 
   .post-list {
-    margin-top: 2em;
+    margin-top: 3.5em;
     margin-left: 0;
     padding-left: 0;
     list-style: none;
@@ -242,11 +242,10 @@
     }
 
     .page-toc {
-      border: 1px solid $bg-1;
-      border-radius: 0.5em;
       padding: 1em 1em 1em 1.5em;
       background-color: $bg-sidebar;
       border: 1px solid $bg-sidebar-border;
+      border-radius: 0.5em;
   
       max-height: calc(100vh - 3em - 2em - 4em - 4em - 7em);
       overflow-y: auto;
@@ -358,7 +357,7 @@
 
   .wrapper-top {
     padding: 0.2em 0;
-    border-bottom: 1px $bg-sidebar-border-dark solid;
+    border-bottom: 1px transparent solid;
     padding-bottom: 0.2em;
 
     font-family: $navbar-font-family-dark;
@@ -389,7 +388,7 @@
     max-width: 100%;
     min-height: 1em;
     padding: 0 3vw;
-    border-top: 1px $bg-sidebar-border-dark solid;
+    border-top: 1px transparent solid;
     background: $bg-sidebar-dark;
     padding-bottom: 0.1em;
   }
@@ -450,7 +449,7 @@
   */
 
   .post-list {
-    margin-top: 2em;
+    margin-top: 3.5em;
     margin-left: 0;
     padding-left: 0;
     list-style: none;
@@ -477,7 +476,7 @@
       font-size: $tag-font-size-dark;
       color: $code-tag-dark;
       background-color: $bg-tag-dark;
-      border: 1px $bg-pre-border-dark solid;
+      border: 1px transparent solid;
     }
 
     .post-tags-list {
@@ -581,11 +580,10 @@
     }
 
     .page-toc {
-      border: 1px transparent solid;
-      border-radius: 0.5em;
       padding: 1em 1em 1em 1.5em;
       background-color: $bg-sidebar-dark;
-      border: 1px solid $bg-sidebar-border-dark;
+      border: 1px transparent solid;
+      border-radius: 0.5em;
   
       max-height: calc(100vh - 3em - 2em - 4em - 4em - 7em);
       overflow-y: auto;
@@ -613,7 +611,7 @@
         font-size: $tag-font-size-dark;
         color: $code-tag-dark;
         background-color: $bg-tag-dark;
-        border: 1px $bg-pre-border-dark solid;
+        border: 1px transparent solid;
       }
     }
 
