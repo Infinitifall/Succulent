@@ -20,15 +20,16 @@
 			</div>
 		{{ end }}
 		<div class="page-date">
-			<div>
+			<span>
 				Published {{ .Date.Format "2006, Jan 02" }}
-			</div>
+			</span>
 
-			<!-- {{ if and (isset .Params "updated") (gt ((.Params.updated | time).Unix) (.Date.Unix))}}
-			<div>
+			{{ if and (isset .Params "updated") (gt ((.Params.updated | time).Unix) (.Date.Unix))}}
+			|
+			<span>
 				Updated {{ (.Params.updated | time).Format "2006, Jan 02" }}
-			</div>
-			{{ end }} -->
+			</span>
+			{{ end }}
 		</div>
 	</div>
 

@@ -284,6 +284,11 @@
     .page-date {
       display: inline-block;
       color: $grey-text;
+      
+      span {
+        margin-right: 0.5em;
+        margin-left: 0.5em;
+      }
     }
   }
 
@@ -622,6 +627,11 @@
     .page-date {
       display: inline-block;
       color: $grey-text-dark;
+      
+      span {
+        margin-right: 0.5em;
+        margin-left: 0.5em;
+      }
     }
   }
 

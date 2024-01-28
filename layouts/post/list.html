@@ -3,7 +3,7 @@
 
 {{ define "list" }}
 <ul class="post-list">
-	{{ range .Pages }}
+	{{ range (sort .Pages ".Params.date").Reverse }}
 	<li class="post-list">
 		{{ if and (isset .Params "updated") (gt ((.Params.updated | time).Unix) (.Date.Unix))}}
 		<div class="post-date">
