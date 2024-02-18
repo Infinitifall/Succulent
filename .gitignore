@@ -1,3 +1,6 @@
+# ide files
+.vscode
+
 # hugo stuff
 .hugo_build.lock
 public/

@@ -37,11 +37,11 @@ function apply_theme() {
     if (theme == 'dark') {
         root.className = 'dark';
         localStorage.setItem('theme', 'dark');
-        theme_toggle.innerHTML = '☀️';
+        // theme_toggle.innerHTML = '☀️';
     } else {
         root.className = 'light';
         localStorage.setItem('theme', 'light');
-        theme_toggle.innerHTML = '🌙';
+        // theme_toggle.innerHTML = '🌙';
     }
 }
 

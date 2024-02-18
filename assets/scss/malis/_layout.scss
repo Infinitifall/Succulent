@@ -138,7 +138,7 @@
       font-size: $tag-font-size;
       color: $code-tag;
       background-color: $bg-tag;
-      border: 1px $bg-pre-border solid;
+      border: 1px transparent solid;
     }
   }
 
@@ -273,7 +273,7 @@
         font-size: $tag-font-size;
         color: $code-tag;
         background-color: $bg-tag;
-        border: 1px $bg-pre-border solid;
+        border: 1px transparent solid;
       }
     }
 

@@ -82,7 +82,7 @@
     background-color: $bg-code;
     padding: 0.05em 0.2em;
     border-radius: 0.2em;
-    border: 1px $bg-pre-border solid;
+    border: 1px transparent solid;
   }
 
   figure {
@@ -158,7 +158,6 @@
 
   button {
     font-family: $base-font-family;
-    font-size: $small-font-size;
     padding: 0.2em 0.5em;
     padding-top: 0.4em;
     color: $button-1;
@@ -360,7 +359,6 @@
 
   button {
     font-family: $base-font-family-dark;
-    font-size: $small-font-size-dark;
     padding: 0.2em 0.5em;
     padding-top: 0.4em;
     color: $button-1-dark;

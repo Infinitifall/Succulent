@@ -1,8 +1,12 @@
 baseURL = "https://infinitifall.net"
 
 [params]
-  css_js_version = "9.1"  # change to bypass browser cache
+  css_js_version = "9.5"  # change to bypass browser cache
 
 [markup]
   [markup.highlight]
     noClasses = false
+  [markup.tableOfContents]
+    startLevel = 1
+    endLevel = 5
+    ordered = false
