@@ -23,9 +23,7 @@
 			<span>
 				Published {{ .Date.Format "2006, Jan 02" }}
 			</span>
-
 			{{ if and (isset .Params "updated") (gt ((.Params.updated | time).Unix) (.Date.Unix))}}
-			|
 			<span>
 				Updated {{ (.Params.updated | time).Format "2006, Jan 02" }}
 			</span>
