@@ -1,7 +1,7 @@
 <head>
 	<meta charset="utf-8">
 
-	{{ $css := resources.Get "scss/malis.scss" | resources.ToCSS }}
+	{{ $css := resources.Get "scss/malis.scss" | css.Sass }}
 	<link rel='stylesheet' type='text/css' href='{{ printf "%s%s%s" ($css.RelPermalink) ("?v=") (.Site.Params.css_js_version) }}'>
   
 	<meta name="viewport" content="width=device-width, initial-scale=1">
@@ -31,8 +31,8 @@
 	<meta property="og:url" content="{{ .Site.BaseURL }}">
   	<link rel="canonical" href="{{ .Site.BaseURL }}">
 
-	<script src='{{ printf "%s%s%s" (.Site.BaseURL) ("/scripts/theme-toggle.js?v=") (.Site.Params.css_js_version) }}'></script>
-	<script defer src='{{ printf "%s%s%s" (.Site.BaseURL) ("/scripts/links-newtab.js?v=") (.Site.Params.css_js_version) }}'></script>
+	<script src='{{ printf "%s%s%s" (.Site.BaseURL) ("scripts/theme-toggle.js?v=") (.Site.Params.css_js_version) }}'></script>
+	<script defer src='{{ printf "%s%s%s" (.Site.BaseURL) ("scripts/links-newtab.js?v=") (.Site.Params.css_js_version) }}'></script>
 
 	{{ if and (isset .Params "latex") (.Params.latex)}}
 	{{ partial "latex.html" . }}
