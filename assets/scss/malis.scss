@@ -28,61 +28,6 @@
 }
 
 @font-face {
-  font-family: "Libre Baskerville";
-  src:
-    local('Libre Baskerville Regular'),
-    url("/fonts/Libre_Baskerville/LibreBaskerville-Regular.ttf");
-}
-
-@font-face {
-  font-family: "Libre Baskerville";
-  src:
-    local('Libre Baskerville Bold'),
-    url("/fonts/Libre_Baskerville/LibreBaskerville-Bold.ttf");
-  font-weight: bold;
-}
-
-@font-face {
-  font-family: "Libre Baskerville";
-  src:
-    local('Libre Baskerville Italic'),
-    url("/fonts/Libre_Baskerville/LibreBaskerville-Italic.ttf");
-  font-style: italic;
-}
-
-@font-face {
-  font-family: "Roboto";
-  src:
-    local('Roboto Regular'),
-    url("/fonts/Roboto/Roboto-Regular.ttf");
-}
-
-@font-face {
-  font-family: "Roboto";
-  src:
-    local('Roboto Bold'),
-    url("/fonts/Roboto/Roboto-Bold.ttf");
-  font-weight: bold;
-}
-
-@font-face {
-  font-family: "Roboto";
-  src:
-    local('Roboto Italic'),
-    url("/fonts/Roboto/Roboto-Italic.ttf");
-  font-style: italic;
-}
-
-@font-face {
-  font-family: "Roboto";
-  src:
-    local('Roboto Bold Italic'),
-    url("/fonts/Roboto/Roboto-BoldItalic.ttf");
-  font-style: italic;
-  font-weight: bold;
-}
-
-@font-face {
   font-family: "Ubuntu Mono";
   src:
     local('Ubuntu Mono Regular'),
@@ -90,42 +35,16 @@
     url("/fonts/Ubuntu_Mono/ubuntumono-regular-webfont.woff");
 }
 
-@font-face {
-  font-family: "Ubuntu Mono";
-  src:
-    local('Ubuntu Mono Bold'),
-    url("/fonts/Ubuntu_Mono/ubuntumono-bold-webfont.woff2"),
-    url("/fonts/Ubuntu_Mono/ubuntumono-bold-webfont.woff");
-  font-weight: bold;
-}
-
-@font-face {
-  font-family: "Ubuntu Mono";
-  src:
-    local('Ubuntu Mono Bold Italic'),
-    url("/fonts/Ubuntu_Mono/ubuntumono-bolditalic-webfont.woff2"),
-    url("/fonts/Ubuntu_Mono/ubuntumono-bolditalic-webfont.woff");
-  font-style: italic;
-  font-weight: bold;
-}
-
-@font-face {
-  font-family: "Ubuntu Mono";
-  src:
-    local('Ubuntu Mono Italic'),
-    url("/fonts/Ubuntu_Mono/ubuntumono-italic-webfont.woff2"),
-    url("/fonts/Ubuntu_Mono/ubuntumono-italic-webfont.woff");
-  font-style: italic;
-}
 
 
 //light theme
 
-$base-font-family: Helvetica, Arial, sans-serif;
-$heading-font-family: Helvetica, Arial, sans-serif;
-$navbar-font-family: 'Times New Roman', Times, serif;
+$base-font-family: 'ETBook';
+$base-font-family-serif: 'ETBook';
+$heading-font-family: 'ETBook';
+$navbar-font-family: 'ETBook';
 
-$base-font-size: 16px;
+$base-font-size: 17px;
 $base-line-height: 1.5;
 $code-line-height: 1.4;
 $base-letter-spacing: 0.02em;
@@ -136,11 +55,11 @@ $heading-font-weight: 600;
 $code-font-weight: 400;
 
 $small-font-size: $base-font-size * 0.8;
-$code-font-family: monospace;
+$code-font-family: "Ubuntu Mono";
 $code-font-size: $base-font-size * 0.85;
 $tag-font-size: $base-font-size * 0.75;
 $sidebar-font-size: $base-font-size * 0.9;
-$katex-font-size:  $base-font-size * 1.1;
+$katex-font-size:  $base-font-size * 0.9;
 
 $heading-text: #333;
 $base-text: #333;
@@ -169,7 +88,7 @@ $button-1-bg: #eee;
 $content-width: 750px;
 $sidebar-width: 300px;
 $gallery-width: 1000px;
-$image-width: 700px;
+$image-width: 550px;
 $content-max-width: 95%;
 $screen-width-inflection: 1500px;
 $screen-width-mobile: 600px;
@@ -178,11 +97,12 @@ $screen-width-tips: 1366px;
 
 // dark theme
 
-$base-font-family-dark: Helvetica, Arial, sans-serif;
-$heading-font-family-dark: Helvetica, Arial, sans-serif;
-$navbar-font-family-dark: 'Times New Roman', Times, serif;
+$base-font-family-dark: "ETBook";
+$base-font-family-serif-dark: "ETBook";
+$heading-font-family-dark: "ETBook";
+$navbar-font-family-dark: "ETBook";
 
-$base-font-size-dark: 16px;
+$base-font-size-dark: 17px;
 $base-line-height-dark: 1.5;
 $code-line-height-dark: 1.4;
 $base-letter-spacing-dark: 0.02em;
@@ -193,11 +113,11 @@ $heading-font-weight-dark: 600;
 $code-font-weight-dark: 400;
 
 $small-font-size-dark: $base-font-size * 0.8;
-$code-font-family-dark: monospace;
+$code-font-family-dark: "Ubuntu Mono";
 $code-font-size-dark: $base-font-size * 0.85;
 $tag-font-size-dark: $base-font-size * 0.75;
 $sidebar-font-size-dark: $base-font-size * 0.9;
-$katex-font-size-dark:  $base-font-size * 1.1;
+$katex-font-size-dark:  $base-font-size * 0.9;
 
 $heading-text-dark: #e0e0e0;
 $base-text-dark: #e5e5e5;
@@ -210,14 +130,14 @@ $bg-code-dark:#111;
 $code-tag-dark: #ccc;
 $bg-tag-dark:#111;
 
-$bg-0-dark:   #1b1b1b;
-$bg-1-dark:   #2a2a2a;
+$bg-0-dark:   #1e1e1e;
+$bg-1-dark:   #2c2c2c;
 $bg-highlight-dark:   #111;
 
-$bg-quote-dark:   #131313;
-$bg-table-dark: #161616;
-$bg-pre-border-dark: #222;
-$bg-sidebar-dark: #151515;
+$bg-quote-dark:   #111;
+$bg-table-dark: #111;
+$bg-pre-border-dark: transparent;
+$bg-sidebar-dark: #111;
 $bg-sidebar-border-dark: #222;
 
 $button-1-dark: #9371b8;
@@ -226,7 +146,7 @@ $button-1-bg-dark: #111;
 $content-width-dark: 750px;
 $sidebar-width-dark: 300px;
 $gallery-width-dark: 1000px;
-$image-width-dark: 700px;
+$image-width-dark: 550px;
 $content-max-width-dark: 95%;
 $screen-width-inflection-dark: 1500px;
 $screen-width-mobile-dark: 600px;

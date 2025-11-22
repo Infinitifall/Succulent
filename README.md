@@ -2,29 +2,34 @@
 
 A blog template built with Hugo
 
-- Tactile and minimalist theme
-- Base page size < 64kB, with latex enabled < 450kB
-- Responsive design, looks good on Desktop, Laptop, Tablet and Mobile
-- Embeds on social media sites like Facebook, Twitter, Slack
-- KaTeX to render math equations
+- Tactile dark/light theme
+- MathJax for LaTeX
+- Responsive design for Desktop/Mobile
+- Embeds on social media websites like Facebook, Twitter, Slack
 
 
 ## Install
 
-Install [Hugo](https://gohugo.io/). It's available in the official repositories of all major Linux distributions
-
-- Debian/Ubuntu based: `sudo apt install hugo`
-- Arch based: `sudo pacman -S hugo`
+First install [Hugo](https://gohugo.io/):
 
 ```bash
-#clone repo
+# For Debian/Ubuntu based distros
+sudo apt install hugo
+
+# For Arch based distros
+sudo pacman -S hugo
+```
+
+Then install this template:
+
+```bash
 git clone https://github.com/Infinitifall/Succulent
 cd Succulent
 
-# serve website locally
+# serve website (with drafts)
 hugo server --buildDrafts
 
-# or build the website
+# build the website
 hugo
 ```
 

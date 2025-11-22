@@ -32,7 +32,7 @@
 
     max-width: MIN($image-width, $content-max-width);
 
-    border: 1px solid $bg-1;
+    box-shadow: 0px 0px 20px 1px rgba(0, 0, 0, 0.3);
   }
 
   /*
@@ -231,9 +231,8 @@
     margin-right: auto;
 
     max-width: MIN($image-width-dark, $content-max-width-dark);
-    filter: brightness(100%);
 
-    border: 1px solid $bg-1-dark;
+    box-shadow: 0px 0px 20px 2px rgba(0, 0, 0, 0.7);
   }
 
   /*
@@ -293,7 +292,7 @@
   pre {
     overflow-x: auto;
     line-height: $code-line-height-dark;
-    border: 1px transparent solid;
+    border: 1px $bg-pre-border-dark solid;
 
     > code {
       color: $code-1-dark;
