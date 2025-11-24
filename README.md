@@ -23,7 +23,7 @@ sudo pacman -S hugo
 Then install this template:
 
 ```bash
-git clone https://github.com/Infinitifall/Succulent
+git clone https://github.com/Infinitifall/Succulent --depth=1
 cd Succulent
 
 # serve website (with drafts)

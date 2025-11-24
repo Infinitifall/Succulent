@@ -132,17 +132,18 @@
     color: $heading-text;
     font-family: $heading-font-family;
     font-weight: $heading-font-weight;
+    font-style: italic;
     padding-bottom: 0.1em;
   }
 
   h1, h2 { border-bottom: 1px solid $bg-1;}
 
-  h1 { font-size: 1.6em; }
-  h2 { font-size: 1.3em; }
-  h3 { font-size: 1.1em; }
-  h4 { font-size: 0.9em; }
-  h5 { font-size: 0.6em; }
-  h6 { font-size: 0.4em; }
+  h1 { font-size: 1.8em; }
+  h2 { font-size: 1.5em; }
+  h3 { font-size: 1.3em; }
+  h4 { font-size: 1.1em; }
+  h5 { font-size: 0.8em; }
+  h6 { font-size: 0.5em; }
 
   /*
   Breaks
@@ -332,17 +333,18 @@
     color: $heading-text-dark;
     font-family: $heading-font-family-dark;
     font-weight: $heading-font-weight-dark;
+    font-style: italic;
     padding-bottom: 0.1em;
   }
 
   h1, h2 { border-bottom: 1px solid $bg-1-dark;}
 
-  h1 { font-size: 1.6em; }
-  h2 { font-size: 1.3em; }
-  h3 { font-size: 1.1em; }
-  h4 { font-size: 0.9em; }
-  h5 { font-size: 0.6em; }
-  h6 { font-size: 0.4em; }
+  h1 { font-size: 1.8em; }
+  h2 { font-size: 1.5em; }
+  h3 { font-size: 1.3em; }
+  h4 { font-size: 1.1em; }
+  h5 { font-size: 0.8em; }
+  h6 { font-size: 0.5em; }
 
   /*
   Breaks
